@@ -1,0 +1,137 @@
+<!--
+	コードが稚拙なのは許してや、城之内・・・
+　　　,,,,,,,､､､､,,,,,,,
+　　（ﾐﾐﾐｼYﾐｼ,彡）
+　　|f''　　''''　 ''ヾ|
+　　|ﾐ ,,,,,,､　,,,,,,, ﾐ|
+　　}|´立）　 立｀|{
+　 （'l　 　, i ､　　l'）
+　 　l 　 ' ｀_´,丶l
+　　 ﾄ　 .´ニ　' ｲ
+　 　| . ＼ー／　＼
+-->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>鳩のきせかえ</title>
+	<meta property="og:title" content="鳩のきせかえ">
+	<meta property="og:type" content="article">
+	<meta property="og:image" content="">
+	<meta property="og:url" content="">
+	<meta property="og:description" content="">
+	<meta property="og:site_name" content="鳩のきせかえ">
+	<meta property="og:locale" content="ja_JP">
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="鳩のきせかえ">
+	<meta name="twitter:description" content="">
+	<meta name="twitter:image" content="">
+	<link rel="stylesheet" href="./style.css">
+	<link rel="stylesheet" href="./js/slick/slick.css">
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-WKMH9W');</script>
+	<!-- End Google Tag Manager -->
+</head>
+<body>
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WKMH9W"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+	<div class="container">
+		<h1>鳩</h1>
+
+		<div class="slide-container">
+			<div class="pigeon-head"><img src="./billy-dress-0.png" alt=""></div>
+			<div id="js-slick">
+				<div class="dress"><img src="./billy-dress-1.png" alt=""></div>
+				<div class="dress"><img src="./billy-dress-2.png" alt=""></div>
+				<div class="dress"><img src="./billy-dress-3.png" alt=""></div>
+				<div class="dress"><img src="./billy-dress-4.png" alt=""></div>
+			</div>
+		</div>
+
+		<style>
+			img {
+				display: block;
+				max-width: 100%;
+				height: auto;
+			}
+			.slide-container {
+				position: relative;
+			}
+
+			.slick-slide {
+				outline: 0;
+			}
+
+			.pigeon-head {
+				position: absolute;
+			}
+
+			.slick-arrow {
+				text-indent: 1000px;
+				white-space: nowrap;
+				overflow: hidden;
+				word-wrap: normal;
+				cursor: pointer;
+				outline: 0;
+				display: block;
+				width: 40px;
+				height: 40px;
+				border-radius: 50%;
+				background-color: rgba(70, 33, 12, 0.7);
+				position: absolute;
+				z-index: 2;
+				top: 50%;
+				margin-top: -30px;
+				border: none;
+			}
+			.slick-arrow:after {
+				content: '';
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				display: block;
+				width: 15px;
+				height: 15px;
+				border-top: 3px solid #FFF;
+				border-left: 3px solid #FFF;
+			}
+			.slick-arrow.slick-prev {
+				left: 0;
+			}
+			.slick-arrow.slick-prev:after {
+				-webkit-transform: translate(-50%, -50%) rotate(-45deg);
+				-ms-transform: translate(-50%, -50%) rotate(-45deg);
+				transform: translate(-50%, -50%) rotate(-45deg);
+				margin-left: 3px;
+			}
+			.slick-arrow.slick-next {
+				right: 0;
+			}
+			.slick-arrow.slick-next:after {
+				-webkit-transform: translate(-50%, -50%) rotate(135deg);
+				-ms-transform: translate(-50%, -50%) rotate(135deg);
+				transform: translate(-50%, -50%) rotate(135deg);
+				margin-left: -3px;
+			}
+		</style>
+	</div>
+
+	<script src="./js/jquery-2.2.4.min.js"></script>
+	<script src="./js/slick/slick.min.js"></script>
+	<script>
+		$(function() {
+			$('#js-slick').slick({
+				items: 1
+			});
+		});
+	</script>
+</body>
+</html>
